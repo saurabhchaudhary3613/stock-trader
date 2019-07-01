@@ -9,10 +9,12 @@ import store from './store/store';
 Vue.use(VueRouter);
 Vue.use(VueResource);
 
+Vue.http.options.root = 'https://http-vuejs-127f4.firebaseio.com/';
+
 Vue.filter('currency', (value) => {
   return '$' + value.toLocaleString();
 })
-
+// https://http-vuejs-127f4.firebaseio.com/
 const router = new VueRouter({
   mode: 'history',
   routes
