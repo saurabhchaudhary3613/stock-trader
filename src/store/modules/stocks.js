@@ -15,7 +15,7 @@ const mutations = {
 
 const actions = {
     buyStock: ({commit}, order) => {
-        commit('BUT_STOCK', order);
+        commit('BUY_STOCK', order);
     },
     initStocks: ({commit}) => {
         commit('SET_STOCKS', stocks)
